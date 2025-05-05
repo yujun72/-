@@ -22,6 +22,7 @@ target = (income > 60000).astype(int)
 # 回歸目標：消費分數（與收入、年齡等有關）
 spend_score = 0.4 * income / 1000 + 0.6 * purchase_freq + np.random.normal(0, 5, n_samples)
 
+
 df = pd.DataFrame({
     'Age': age,
     'Income': income,
@@ -30,7 +31,7 @@ df = pd.DataFrame({
     'Target': target,
     'SpendScore': spend_score
 })
-# 特徵與目標
+# 特徵與目標>>>
 X_cls = df[['Age', 'Income', 'PurchaseFreq', 'Membership']]
 y_cls = df['Target']
 

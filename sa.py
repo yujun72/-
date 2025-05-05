@@ -282,7 +282,6 @@ if __name__ == "__main__":
     print("\n===== 分類任務結束 =====")
     print("\n\n") # 增加間隔
 
-    # 執行回歸任務
     print("\n===== 開始回歸任務 =====")
     perform_regression(customer_df.copy(), # 複製一份資料
                        classification_regression_features,
@@ -290,4 +289,4 @@ if __name__ == "__main__":
     print("\n===== 回歸任務結束 =====")
     print("\n\n") # 增加間隔
 
-    print("--- 程式執行完畢 ---")
+    print("--- ???程式執行完畢 ---")
